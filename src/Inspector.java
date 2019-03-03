@@ -143,7 +143,16 @@ public class Inspector {
 			try {
 				if (fields[i].get(obj).getClass().isArray()) {
 					//TODO make this work with arrays
-					
+					Object arr = fields[i].get(obj);
+					int len = Array.getLength(arr);
+					str += indent(ind + 2) + "Array length: " + len + "\n";
+					str += indent(ind + 2) + "Current values: \n";
+					for (int k = 0; k < len; k++) {
+						str += indent(ind + 3) + Array.get(arr, k).toString() + "\n";
+						if (recursive && !(Array.get(arr, k).getClass().isPrimitive())) {
+							str += inspectWorker(Array.get(arr, k).getClass(), arr, recursive, ind + 4);
+						}
+					}
 				} 
 				else {
 					str += indent(ind + 2) + "Current value: " + fields[i].get(obj).toString();
