@@ -1,19 +1,32 @@
 import java.lang.reflect.*;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 
 public class Inspector {
-	List<Class> toInspect = new LinkedList<Class>();
 	List<Class> alreadyInspected = new LinkedList<Class>();
 	
 	public void inspect(Object obj, boolean recursive) {
-		inspectWorker(obj, recursive, 0);
+		String str;
+		if (obj == null) {
+			str = "Object provided is NULL\n";
+		}
+		else {
+			Class classObj = obj.getClass();
+			str = inspectWorker(classObj, obj, recursive, 0);
+		}
+		System.out.println(str);
 	}
 
-	public void inspectWorker(Object obj, boolean recursive, int ind) {
+	public String inspectWorker(Class classObj, Object obj, boolean recursive, int ind) {
+		if (obj == null) {
+			return "NULL\n";
+		}
+		
+		List<Class> toInspect = new ArrayList<Class>();
 		String str = "";
-		Class classObj = obj.getClass();
+
 		alreadyInspected.add(classObj);
 		
 		str += indent(ind) + "Declaring Class: " + classObj.getName() + "\n";
@@ -38,6 +51,7 @@ public class Inspector {
 			str += indent(ind + 1) + "Methods: \n";
 		}
 		for (int i = 0; i < methods.length; i++) {
+			methods[i].setAccessible(true);
 			str += indent(ind + 2) + "Method: " + methods[i].getName() + "\n";
 			
 			Class[] exceps = methods[i].getExceptionTypes();
@@ -78,8 +92,9 @@ public class Inspector {
 		}
 		
 		
-		Constructor[] constr = classObj.getConstructors();
+		Constructor[] constr = classObj.getDeclaredConstructors();
 		for (int i = 0; i < constr.length; i++) {
+			constr[i].setAccessible(true);
 			str += indent(ind + 1) + "Constructor: " + constr[i].getName() + "\n";
 			
 			Class[] params = constr[i].getParameterTypes();
@@ -108,6 +123,7 @@ public class Inspector {
 		
 		Field[] fields = classObj.getDeclaredFields();
 		for (int i = 0; i < fields.length; i++) {
+			fields[i].setAccessible(true);
 			str += indent(ind + 1) + "Field: " + fields[i].getName() + "\n";
 			
 			Class type = fields[i].getType();
@@ -124,29 +140,85 @@ public class Inspector {
 				}
 			}
 			
-			//TODO make this work with arrays
-			
-			if (!recursive) {
-				str += indent(ind + 2) + "Current value: " + fields[i].toString();
+			try {
+				if (fields[i].get(obj).getClass().isArray()) {
+					//TODO make this work with arrays
+					
+				} 
+				else {
+					str += indent(ind + 2) + "Current value: " + fields[i].get(obj).toString();
+					if (recursive && !(fields[i].get(obj).getClass().isPrimitive())) {
+						str += inspectWorker(fields[i].get(obj).getClass(), fields[i].get(obj), recursive, ind + 3);
+					}
+				}
+			} catch (IllegalArgumentException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
-			else {
-				//TODO  finish the recursive case
-			}
+		}
+		
+		for (int i = 0; i < toInspect.size(); i++) {
+			//Object supObj = createSuperObjFromClass(toInspect.get(i), obj);
+			str += "\n" + inspectWorker(toInspect.get(i), obj, recursive, ind);
 		}
 		
 		
 		
 		
-		
-		
-		System.out.println(str);
+		return str;
 	}
 	
+	/*
+	public Object createSuperObjFromClass(Class cl, Object obj) {
+		Object supObj = null;
+		try {
+			Constructor c = cl.getConstructor(null);
+			c.setAccessible(true);
+			supObj = c.newInstance(null);
+		} catch (NoSuchMethodException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		Field[] fields = cl.getDeclaredFields();
+		for (int i = 0; i < fields.length; i++) {
+			fields[i].setAccessible(true);
+			try {
+				fields[i].set(supObj, fields[i].get(obj));
+			} catch (IllegalArgumentException e) {
+				//do nothing
+			} catch (IllegalAccessException e) {
+				// should not happen
+				e.printStackTrace();
+			}
+		}
+		
+		return supObj;
+	}
+	//*/
 	
 	public String indent(int numIndents) {
 		String str = "";
 		for (int i = 0; i < numIndents; i++) {
-			str += "    ";
+			str += "   ";
 		}
 		return str;
 	}
