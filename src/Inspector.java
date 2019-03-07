@@ -5,7 +5,7 @@ import java.util.List;
 
 
 public class Inspector {
-	List<Class> alreadyInspected = new LinkedList<Class>();
+	List<Class<?>> alreadyInspected = new LinkedList<Class<?>>();
 	
 	public void inspect(Object obj, boolean recursive) {
 		String str;
@@ -13,31 +13,31 @@ public class Inspector {
 			str = "Object provided is NULL\n";
 		}
 		else {
-			Class classObj = obj.getClass();
+			Class<?> classObj = obj.getClass();
 			str = inspectWorker(classObj, obj, recursive, 0);
 		}
 		System.out.println(str);
 	}
 
-	public String inspectWorker(Class classObj, Object obj, boolean recursive, int ind) {
-		if (obj == null) {
+	public String inspectWorker(Class<?> classObj, Object obj, boolean recursive, int ind) {
+		/*if (obj == null) {
 			return "NULL\n";
-		}
+		}//*/
 		
-		List<Class> toInspect = new ArrayList<Class>();
+		List<Class<?>> toInspect = new ArrayList<Class<?>>();
 		String str = "";
 
 		alreadyInspected.add(classObj);
 		
-		str += indent(ind) + "Declaring Class: " + classObj.getName() + "\n";
+		str += indent(ind) + "Declared Class: " + classObj.getName() + "\n";
 		
-		Class superCl = classObj.getSuperclass();
+		Class<?> superCl = classObj.getSuperclass();
 		if (superCl != null) {
 			str += indent(ind + 1) + "Superclass: " + superCl.getName() + "\n";
 			toInspect.add(superCl);
 		}
 		
-		Class[] interfaceCl = classObj.getInterfaces();
+		Class<?>[] interfaceCl = classObj.getInterfaces();
 		if (interfaceCl.length > 0) {
 			str += indent(ind + 1) + "Interfaces: \n";
 		}
@@ -54,29 +54,31 @@ public class Inspector {
 			methods[i].setAccessible(true);
 			str += indent(ind + 2) + "Method: " + methods[i].getName() + "\n";
 			
-			Class[] exceps = methods[i].getExceptionTypes();
-			str += indent(ind + 3) + "Exceptions:\n";
+			Class<?>[] exceps = methods[i].getExceptionTypes();
+			str += indent(ind + 3) + "Exceptions: ";
 			if (exceps.length == 0) {
-				str += indent(ind + 4) + "None\n";
+				str += "None\n";
 			}
 			else {
 				for (int j = 0; j < exceps.length; j++) {
-					str += indent(ind + 4) + exceps[j].getName() + "\n";
+					str += exceps[j].getName() + " ";
 				}
+				str += "\n";
 			}
 			
-			Class[] params = methods[i].getParameterTypes();
-			str += indent(ind + 3) + "Parameters:\n";
+			Class<?>[] params = methods[i].getParameterTypes();
+			str += indent(ind + 3) + "Parameters: ";
 			if (params.length == 0) {
-				str += indent(ind + 4) + "None\n";
+				str += "None\n";
 			}
 			else {
 				for (int j = 0; j < params.length; j++) {
-					str += indent(ind + 4) + params[j].getTypeName() + ": " + params[j].getName() + "\n";
+					str += params[j].getTypeName() + " ";
 				}
+				str += "\n";
 			}
 			
-			Class metRet = methods[i].getReturnType();
+			Class<?> metRet = methods[i].getReturnType();
 			str += indent(ind + 3) + "Return Type: " + metRet.getTypeName() + "\n";
 			
 			String[] mods = (Modifier.toString(methods[i].getModifiers())).split(" ");
@@ -85,27 +87,32 @@ public class Inspector {
 				str += indent(ind + 4) + "None\n";
 			}
 			else {
+				str += indent(ind + 4);
 				for (int j = 0; j < mods.length; j++) {
-					str += indent(ind + 4) + mods[j] + "\n";
+					str += mods[j] + " ";
 				}
+				str += "\n";
 			}
 		}
 		
 		
-		Constructor[] constr = classObj.getDeclaredConstructors();
+		Constructor<?>[] constr = classObj.getDeclaredConstructors();
 		for (int i = 0; i < constr.length; i++) {
-			constr[i].setAccessible(true);
+			if (Modifier.isPrivate(constr[i].getModifiers())) {
+				//constr[i].setAccessible(true);
+			}
 			str += indent(ind + 1) + "Constructor: " + constr[i].getName() + "\n";
 			
-			Class[] params = constr[i].getParameterTypes();
-			str += indent(ind + 2) + "Parameters:\n";
+			Class<?>[] params = constr[i].getParameterTypes();
+			str += indent(ind + 2) + "Parameters: ";
 			if (params.length == 0) {
-				str += indent(ind + 3) + "None\n";
+				str += "None\n";
 			}
 			else {
 				for (int j = 0; j < params.length; j++) {
-					str += indent(ind + 3) + params[j].getTypeName() + ": " + params[j].getName() + "\n";
+					str += params[j].getTypeName() + " ";
 				}
+				str += "\n";
 			}
 			
 			String[] mods = (Modifier.toString(constr[i].getModifiers())).split(" ");
@@ -114,9 +121,13 @@ public class Inspector {
 				str += indent(ind + 3) + "None\n";
 			}
 			else {
-				for (int j = 0; j < mods.length; j++) {
-					str += indent(ind + 3) + mods[j] + "\n";
+				if (mods.length >= 0) {
+					str += indent(ind + 3) + mods[0];
 				}
+				for (int j = 1; j < mods.length; j++) {
+					str += ", " + mods[j];
+				}
+				str += "\n";
 			}
 		}
 		
@@ -126,96 +137,142 @@ public class Inspector {
 			fields[i].setAccessible(true);
 			str += indent(ind + 1) + "Field: " + fields[i].getName() + "\n";
 			
-			Class type = fields[i].getType();
+			Class<?> type = fields[i].getType();
 			str += indent(ind + 2) + "Type: " + type.getTypeName() + "\n";
 			
 			String[] mods = (Modifier.toString(fields[i].getModifiers())).split(" ");
-			str += indent(ind + 2) + "Modifiers:\n";
+			str += indent(ind + 2) + "Modifiers: ";
 			if (mods.length == 0) {
-				str += indent(ind + 3) + "None\n";
+				str += "None\n";
 			}
 			else {
 				for (int j = 0; j < mods.length; j++) {
-					str += indent(ind + 3) + mods[j] + "\n";
+					str += mods[j] + " ";
 				}
+				str += "\n";
 			}
 			
 			try {
-				if (fields[i].get(obj).getClass().isArray()) {
-					//TODO make this work with arrays
+				if (fields[i].get(obj) == null) {
+					str += indent(ind + 2) + "Current value: null\n"; 
+				}
+				else if (fields[i].get(obj).getClass().isArray()) {
 					Object arr = fields[i].get(obj);
 					int len = Array.getLength(arr);
 					str += indent(ind + 2) + "Array length: " + len + "\n";
 					str += indent(ind + 2) + "Current values: \n";
 					for (int k = 0; k < len; k++) {
 						str += indent(ind + 3) + Array.get(arr, k).toString() + "\n";
-						if (recursive && !(Array.get(arr, k).getClass().isPrimitive())) {
-							str += inspectWorker(Array.get(arr, k).getClass(), arr, recursive, ind + 4);
-						}
+						if (recursive && !(Array.get(arr, k).getClass().isPrimitive()) 
+								&& hasNotInspected(Array.get(arr, k).getClass())) {
+							str += inspectWorker(Array.get(arr, k).getClass(), Array.get(arr, k), recursive, ind + 4);
+						}//*/
 					}
 				} 
 				else {
-					str += indent(ind + 2) + "Current value: " + fields[i].get(obj).toString();
-					if (recursive && !(fields[i].get(obj).getClass().isPrimitive())) {
+					str += indent(ind + 2) + "Current value: " + fields[i].get(obj).toString() + "\n";
+					/*if (recursive && !(fields[i].get(obj).getClass().isPrimitive())
+							&& hasNotInspected(fields[i].get(obj).getClass())) {
 						str += inspectWorker(fields[i].get(obj).getClass(), fields[i].get(obj), recursive, ind + 3);
-					}
+					}//*/
 				}
 			} catch (IllegalArgumentException e) {
-				// TODO Auto-generated catch block
+				System.out.println("IllegalArgumentException classObj: " + classObj.toString() 
+															+ "field: " + fields[i].toString() 
+															+ ", obj: " + obj.toString() + "\n");
 				e.printStackTrace();
+				System.exit(-1);
 			} catch (IllegalAccessException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				//e.printStackTrace();
+				//System.exit(-1);
 			}
 		}
 		
+		str += indent(ind) + "========================================\n";
+		///*
 		for (int i = 0; i < toInspect.size(); i++) {
-			//Object supObj = createSuperObjFromClass(toInspect.get(i), obj);
-			str += "\n" + inspectWorker(toInspect.get(i), obj, recursive, ind);
+			Object supObj = createSuperObjFromClass(toInspect.get(i), obj);
+			if (supObj != null) {
+				supObj = obj;
+			}
+			else if (hasNotInspected(toInspect.get(i))) {
+				str += "\n" + inspectWorker(toInspect.get(i), 
+											supObj, 
+											recursive, 
+											ind);
+			}
 		}
-		
-		
-		
-		
+		//*/
 		return str;
 	}
 	
-	/*
-	public Object createSuperObjFromClass(Class cl, Object obj) {
+	public boolean hasNotInspected(Class<?> c) {
+		boolean ret = true; 
+		
+		for (int i = 0; i < alreadyInspected.size() && ret; i++) {
+			if (alreadyInspected.get(i).equals(c)) {
+				ret = false;
+			}
+		}
+		
+		return ret;
+	}
+	
+	///*
+	public Object createSuperObjFromClass(Class<?> cl, Object obj) {
 		Object supObj = null;
+		if (cl.isInterface()) {
+			return supObj;
+		}
 		try {
-			Constructor c = cl.getConstructor(null);
+			Constructor<?> c = cl.getDeclaredConstructor(new Class<?>[] {});
 			c.setAccessible(true);
-			supObj = c.newInstance(null);
+			supObj = c.newInstance(new Object[] {});
 		} catch (NoSuchMethodException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
+			//System.exit(-1);//*/
 		} catch (SecurityException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
+			//System.exit(-1);
 		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
+			/*System.out.println(cl.getName());
+			System.out.println("interface?: " + cl.isInterface());
 			e.printStackTrace();
+			System.exit(-1);*/
+			// if could not be create instance, return null.
 		} catch (IllegalAccessException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
+			//System.exit(-1);
 		} catch (IllegalArgumentException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
+			//System.exit(-1);
 		} catch (InvocationTargetException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
+			//System.exit(-1);//*/
 		}
 		
 		Field[] fields = cl.getDeclaredFields();
 		for (int i = 0; i < fields.length; i++) {
 			fields[i].setAccessible(true);
 			try {
-				fields[i].set(supObj, fields[i].get(obj));
+				Object temp = obj.getClass().getDeclaredField(fields[i].getName()).get(obj);
+				fields[i].set(supObj, temp);
 			} catch (IllegalArgumentException e) {
 				//do nothing
 			} catch (IllegalAccessException e) {
 				// should not happen
+				e.printStackTrace();
+			} catch (NoSuchFieldException e) {
+				// do nothing
+				//e.printStackTrace();
+			} catch (SecurityException e) {
+				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -227,7 +284,7 @@ public class Inspector {
 	public String indent(int numIndents) {
 		String str = "";
 		for (int i = 0; i < numIndents; i++) {
-			str += "   ";
+			str += "  |   ";
 		}
 		return str;
 	}
