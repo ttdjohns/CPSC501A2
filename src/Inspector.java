@@ -46,6 +46,10 @@ public class Inspector {
 			toInspect.add(interfaceCl[i]);
 		}
 		
+		/*if (classObj.isArray() && hasNotInspected(classObj.getComponentType())) {
+			str += inspectArray(obj);
+		}*/
+		
 		Method[] methods = classObj.getDeclaredMethods();
 		if (methods.length > 0) {
 			str += indent(ind + 1) + "Methods: \n";
@@ -153,26 +157,37 @@ public class Inspector {
 			}
 			
 			try {
-				if (fields[i].get(obj) == null) {
+				if (obj == null || fields[i] == null || fields[i].get(obj) == null) {
 					str += indent(ind + 2) + "Current value: null\n"; 
-				}
-				else if (fields[i].get(obj).getClass().isArray()) {
+				}//*/
+				else if (fields[i].getType().isArray()) {
 					Object arr = fields[i].get(obj);
 					int len = Array.getLength(arr);
 					str += indent(ind + 2) + "Array length: " + len + "\n";
 					str += indent(ind + 2) + "Current values: \n";
 					for (int k = 0; k < len; k++) {
-						str += indent(ind + 3) + Array.get(arr, k).toString() + "\n";
-						if (recursive && !(Array.get(arr, k).getClass().isPrimitive()) 
+						if (Array.get(arr, k) == null) 
+							str += indent(ind + 3) + "null \n";
+						else {
+							str += indent(ind + 3) + Array.get(arr, k).toString() + "\n";
+						}
+						if (Array.get(arr, k) != null && hasNotInspected(fields[i].getType().getComponentType())) {
+							str += inspectWorker(fields[i].getType().getComponentType(), null, recursive, ind + 4);
+						}
+						else if (recursive && (Array.get(arr, k) != null) 
+								&& !(isPrimOrWrapper(Array.get(arr, k).getClass())) 
 								&& hasNotInspected(Array.get(arr, k).getClass())) {
 							str += inspectWorker(Array.get(arr, k).getClass(), Array.get(arr, k), recursive, ind + 4);
 						}//*/
 					}
 				} 
 				else {
+					if (fields[i].get(obj) == null) {
+						str += indent(ind + 2) + "Current value: null\n";
+					}
 					str += indent(ind + 2) + "Current value: " + fields[i].get(obj).toString() + "\n";
-					/*if (recursive && !(fields[i].get(obj).getClass().isPrimitive())
-							&& hasNotInspected(fields[i].get(obj).getClass())) {
+					if (recursive && !(isPrimOrWrapper(fields[i].getType()))
+							&& hasNotInspected(fields[i].getType())) {
 						str += inspectWorker(fields[i].get(obj).getClass(), fields[i].get(obj), recursive, ind + 3);
 					}//*/
 				}
@@ -190,10 +205,11 @@ public class Inspector {
 		}
 		
 		str += indent(ind) + "========================================\n";
+		
 		///*
 		for (int i = 0; i < toInspect.size(); i++) {
 			Object supObj = createSuperObjFromClass(toInspect.get(i), obj);
-			if (supObj != null) {
+			if (supObj == null) {
 				supObj = obj;
 			}
 			else if (hasNotInspected(toInspect.get(i))) {
@@ -222,7 +238,7 @@ public class Inspector {
 	///*
 	public Object createSuperObjFromClass(Class<?> cl, Object obj) {
 		Object supObj = null;
-		if (cl.isInterface()) {
+		if (cl.isInterface() || obj == null) {
 			return supObj;
 		}
 		try {
@@ -266,14 +282,13 @@ public class Inspector {
 			} catch (IllegalArgumentException e) {
 				//do nothing
 			} catch (IllegalAccessException e) {
-				// should not happen
-				e.printStackTrace();
+				//e.printStackTrace();
 			} catch (NoSuchFieldException e) {
 				// do nothing
 				//e.printStackTrace();
 			} catch (SecurityException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				//e.printStackTrace();
 			}
 		}
 		
@@ -287,5 +302,12 @@ public class Inspector {
 			str += "  |   ";
 		}
 		return str;
+	}
+	
+	public boolean isPrimOrWrapper(Class<?> c) {
+		return ((c.isPrimitive() && c != void.class) ||
+		        c == Double.class || c == Float.class || c == Long.class ||
+		        c == Integer.class || c == Short.class || c == Character.class ||
+		        c == Byte.class || c == Boolean.class);
 	}
 }
