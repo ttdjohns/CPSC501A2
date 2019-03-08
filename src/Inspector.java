@@ -46,9 +46,9 @@ public class Inspector {
 			toInspect.add(interfaceCl[i]);
 		}
 		
-		/*if (classObj.isArray() && hasNotInspected(classObj.getComponentType())) {
-			str += inspectArray(obj);
-		}*/
+		if (classObj.isArray() && hasNotInspected(classObj.getComponentType())) {
+			str += inspectArray(recursive, ind, classObj, obj);
+		}//*/
 		
 		Method[] methods = classObj.getDeclaredMethods();
 		if (methods.length > 0) {
@@ -162,24 +162,7 @@ public class Inspector {
 				}//*/
 				else if (fields[i].getType().isArray()) {
 					Object arr = fields[i].get(obj);
-					int len = Array.getLength(arr);
-					str += indent(ind + 2) + "Array length: " + len + "\n";
-					str += indent(ind + 2) + "Current values: \n";
-					for (int k = 0; k < len; k++) {
-						if (Array.get(arr, k) == null) 
-							str += indent(ind + 3) + "null \n";
-						else {
-							str += indent(ind + 3) + Array.get(arr, k).toString() + "\n";
-						}
-						if (Array.get(arr, k) != null && hasNotInspected(fields[i].getType().getComponentType())) {
-							str += inspectWorker(fields[i].getType().getComponentType(), null, recursive, ind + 4);
-						}
-						else if (recursive && (Array.get(arr, k) != null) 
-								&& !(isPrimOrWrapper(Array.get(arr, k).getClass())) 
-								&& hasNotInspected(Array.get(arr, k).getClass())) {
-							str += inspectWorker(Array.get(arr, k).getClass(), Array.get(arr, k), recursive, ind + 4);
-						}//*/
-					}
+					str += inspectArray(recursive, ind, fields[i].getType().getComponentType(), arr);
 				} 
 				else {
 					if (fields[i].get(obj) == null) {
@@ -222,6 +205,50 @@ public class Inspector {
 		//*/
 		return str;
 	}
+
+	public String inspectArray(boolean recursive, int ind, Class<?> arrayClass, Object arr) {
+		String str = "";
+		Class<?> arrayType = arrayClass.getComponentType();
+		if (arr != null) {
+			str += indent(ind + 2) + "Array dimensions: " + getDim(arr) + "\n";
+		}
+		int len = 0;
+		if (arr != null) {
+			len = Array.getLength(arr);
+			str += indent(ind + 2) + "Array length (1st dimension): " + len + "\n";
+		}
+		else {
+			str += indent(ind + 2) + "Array length: could not be determined (array is null)\n";
+		}//*/
+		str += indent(ind + 2) + "Current values: \n";
+		for (int k = 0; k < len; k++) {
+			if (Array.get(arr, k) == null) 
+				str += indent(ind + 3) + "null \n";
+			else {
+				str += indent(ind + 3) + Array.get(arr, k).toString() + "\n";
+			}
+			if (Array.get(arr, k) != null && hasNotInspected(arrayType)) {
+				str += inspectWorker(arrayType, null, recursive, ind + 4);
+			}
+			else if (recursive && (Array.get(arr, k) != null) 
+					&& !(isPrimOrWrapper(Array.get(arr, k).getClass())) 
+					&& hasNotInspected(Array.get(arr, k).getClass())) {
+				str += inspectWorker(Array.get(arr, k).getClass(), Array.get(arr, k), recursive, ind + 4);
+			}//*/
+		}
+		return str;
+	}
+	
+	//public int getDim(Class<?> arrayClass) {
+	public int getDim(Object array) {
+	    int dim = 0;
+	    Class<?> cl = array.getClass();
+	    while (cl.isArray()) {
+	      dim++;
+	      cl = cl.getComponentType();
+	    }
+	    return dim;
+	  }
 	
 	public boolean hasNotInspected(Class<?> c) {
 		boolean ret = true; 
