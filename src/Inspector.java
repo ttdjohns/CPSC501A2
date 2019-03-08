@@ -50,6 +50,34 @@ public class Inspector {
 			str += inspectArray(recursive, ind, classObj, obj);
 		}//*/
 		
+		str = inspectMethods(classObj, ind, str);
+		
+		
+		str = inspectConstructors(classObj, ind, str);
+		
+		
+		str = inspectFields(classObj, obj, recursive, ind, str);
+		
+		str += indent(ind) + "========================================\n";
+		
+		///*
+		for (int i = 0; i < toInspect.size(); i++) {
+			Object supObj = createSuperObjFromClass(toInspect.get(i), obj);
+			if (supObj == null) {
+				supObj = obj;
+			}
+			else if (hasNotInspected(toInspect.get(i))) {
+				str += "\n" + inspectWorker(toInspect.get(i), 
+											supObj, 
+											recursive, 
+											ind);
+			}
+		}
+		//*/
+		return str;
+	}
+
+	public String inspectMethods(Class<?> classObj, int ind, String str) {
 		Method[] methods = classObj.getDeclaredMethods();
 		if (methods.length > 0) {
 			str += indent(ind + 1) + "Methods: \n";
@@ -98,29 +126,6 @@ public class Inspector {
 				str += "\n";
 			}
 		}
-		
-		
-		str = inspectConstructors(classObj, ind, str);
-		
-		
-		str = inspectFields(classObj, obj, recursive, ind, str);
-		
-		str += indent(ind) + "========================================\n";
-		
-		///*
-		for (int i = 0; i < toInspect.size(); i++) {
-			Object supObj = createSuperObjFromClass(toInspect.get(i), obj);
-			if (supObj == null) {
-				supObj = obj;
-			}
-			else if (hasNotInspected(toInspect.get(i))) {
-				str += "\n" + inspectWorker(toInspect.get(i), 
-											supObj, 
-											recursive, 
-											ind);
-			}
-		}
-		//*/
 		return str;
 	}
 
