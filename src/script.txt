@@ -1,0 +1,2202 @@
+Loading object inspector: Inspector
+======================================================
+Running Test: ClassA
+Declared Class: ClassA
+  |   Superclass: java.lang.Object
+  |   Interfaces: 
+  |     |   java.io.Serializable
+  |     |   java.lang.Runnable
+  |   Methods: 
+  |     |   Method: run
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toString
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: setVal
+  |     |     |   Exceptions: java.lang.Exception 
+  |     |     |   Parameters: int 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: printSomething
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   private 
+  |     |   Method: getVal
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |   Constructor: ClassA
+  |     |   Parameters: None
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: ClassA
+  |     |   Parameters: int 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Field: val
+  |     |   Type: int
+  |     |   Modifiers: private 
+  |     |   Current value: 3
+  |   Field: val2
+  |     |   Type: double
+  |     |   Modifiers: private 
+  |     |   Current value: 0.2
+  |   Field: val3
+  |     |   Type: boolean
+  |     |   Modifiers: private 
+  |     |   Current value: true
+========================================
+
+Declared Class: java.lang.Object
+  |   Methods: 
+  |     |   Method: finalize
+  |     |     |   Exceptions: java.lang.Throwable 
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   protected 
+  |     |   Method: wait
+  |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final 
+  |     |   Method: wait
+  |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |   Parameters: long int 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final 
+  |     |   Method: wait
+  |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |   Parameters: long 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final native 
+  |     |   Method: equals
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.Object 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toString
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: hashCode
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public native 
+  |     |   Method: getClass
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.Class
+  |     |     |   Modifiers:
+  |     |     |     |   public final native 
+  |     |   Method: clone
+  |     |     |   Exceptions: java.lang.CloneNotSupportedException 
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.Object
+  |     |     |   Modifiers:
+  |     |     |     |   protected native 
+  |     |   Method: notify
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final native 
+  |     |   Method: notifyAll
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final native 
+  |     |   Method: registerNatives
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   private static native 
+  |   Constructor: java.lang.Object
+  |     |   Parameters: None
+  |     |   Modifiers:
+  |     |     |   public
+========================================
+
+Declared Class: java.io.Serializable
+========================================
+
+Declared Class: java.lang.Runnable
+  |   Methods: 
+  |     |   Method: run
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public abstract 
+========================================
+
+======================================================
+======================================================
+Running Test: ClassA
+Declared Class: ClassA
+  |   Superclass: java.lang.Object
+  |   Interfaces: 
+  |     |   java.io.Serializable
+  |     |   java.lang.Runnable
+  |   Methods: 
+  |     |   Method: run
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toString
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: setVal
+  |     |     |   Exceptions: java.lang.Exception 
+  |     |     |   Parameters: int 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: getVal
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: printSomething
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   private 
+  |   Constructor: ClassA
+  |     |   Parameters: None
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: ClassA
+  |     |   Parameters: int 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Field: val
+  |     |   Type: int
+  |     |   Modifiers: private 
+  |     |   Current value: 12
+  |   Field: val2
+  |     |   Type: double
+  |     |   Modifiers: private 
+  |     |   Current value: 0.2
+  |   Field: val3
+  |     |   Type: boolean
+  |     |   Modifiers: private 
+  |     |   Current value: true
+========================================
+
+Declared Class: java.lang.Object
+  |   Methods: 
+  |     |   Method: finalize
+  |     |     |   Exceptions: java.lang.Throwable 
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   protected 
+  |     |   Method: wait
+  |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final 
+  |     |   Method: wait
+  |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |   Parameters: long int 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final 
+  |     |   Method: wait
+  |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |   Parameters: long 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final native 
+  |     |   Method: equals
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.Object 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toString
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: hashCode
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public native 
+  |     |   Method: getClass
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.Class
+  |     |     |   Modifiers:
+  |     |     |     |   public final native 
+  |     |   Method: clone
+  |     |     |   Exceptions: java.lang.CloneNotSupportedException 
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.Object
+  |     |     |   Modifiers:
+  |     |     |     |   protected native 
+  |     |   Method: notify
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final native 
+  |     |   Method: notifyAll
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final native 
+  |     |   Method: registerNatives
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   private static native 
+  |   Constructor: java.lang.Object
+  |     |   Parameters: None
+  |     |   Modifiers:
+  |     |     |   public
+========================================
+
+Declared Class: java.io.Serializable
+========================================
+
+Declared Class: java.lang.Runnable
+  |   Methods: 
+  |     |   Method: run
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public abstract 
+========================================
+
+======================================================
+======================================================
+Running Test: ClassB
+Declared Class: ClassB
+  |   Superclass: ClassC
+  |   Interfaces: 
+  |     |   java.lang.Runnable
+  |   Methods: 
+  |     |   Method: run
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toString
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: func3
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |   Constructor: ClassB
+  |     |   Parameters: None
+  |     |   Modifiers:
+  |     |     |   public
+  |   Field: val
+  |     |   Type: ClassA
+  |     |   Modifiers: private 
+  |     |   Current value: ClassA
+  |     |     |   Declared Class: ClassA
+  |     |     |     |   Superclass: java.lang.Object
+  |     |     |     |   Interfaces: 
+  |     |     |     |     |   java.io.Serializable
+  |     |     |     |     |   java.lang.Runnable
+  |     |     |     |   Methods: 
+  |     |     |     |     |   Method: run
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: toString
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.String
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: setVal
+  |     |     |     |     |     |   Exceptions: java.lang.Exception 
+  |     |     |     |     |     |   Parameters: int 
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: getVal
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: printSomething
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private 
+  |     |     |     |   Constructor: ClassA
+  |     |     |     |     |   Parameters: None
+  |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |   public
+  |     |     |     |   Constructor: ClassA
+  |     |     |     |     |   Parameters: int 
+  |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |   public
+  |     |     |     |   Field: val
+  |     |     |     |     |   Type: int
+  |     |     |     |     |   Modifiers: private 
+  |     |     |     |     |   Current value: 3
+  |     |     |     |   Field: val2
+  |     |     |     |     |   Type: double
+  |     |     |     |     |   Modifiers: private 
+  |     |     |     |     |   Current value: 0.2
+  |     |     |     |   Field: val3
+  |     |     |     |     |   Type: boolean
+  |     |     |     |     |   Modifiers: private 
+  |     |     |     |     |   Current value: true
+  |     |     |   ========================================
+
+  |     |     |   Declared Class: java.lang.Object
+  |     |     |     |   Methods: 
+  |     |     |     |     |   Method: finalize
+  |     |     |     |     |     |   Exceptions: java.lang.Throwable 
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   protected 
+  |     |     |     |     |   Method: wait
+  |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final 
+  |     |     |     |     |   Method: wait
+  |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |   Parameters: long int 
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final 
+  |     |     |     |     |   Method: wait
+  |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |   Parameters: long 
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: equals
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.lang.Object 
+  |     |     |     |     |     |   Return Type: boolean
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: toString
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.String
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: hashCode
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public native 
+  |     |     |     |     |   Method: getClass
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.Class
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: clone
+  |     |     |     |     |     |   Exceptions: java.lang.CloneNotSupportedException 
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.Object
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   protected native 
+  |     |     |     |     |   Method: notify
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: notifyAll
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: registerNatives
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private static native 
+  |     |     |     |   Constructor: java.lang.Object
+  |     |     |     |     |   Parameters: None
+  |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |   public
+  |     |     |   ========================================
+
+  |     |     |   Declared Class: java.io.Serializable
+  |     |     |   ========================================
+
+  |     |     |   Declared Class: java.lang.Runnable
+  |     |     |     |   Methods: 
+  |     |     |     |     |   Method: run
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public abstract 
+  |     |     |   ========================================
+  |   Field: val2
+  |     |   Type: ClassA
+  |     |   Modifiers: private 
+  |     |   Current value: ClassA
+  |   Field: val3
+  |     |   Type: ClassA
+  |     |   Modifiers: private 
+  |     |   Current value: null
+========================================
+
+Declared Class: ClassC
+  |   Superclass: ClassD
+  |   Interfaces: 
+  |     |   InterfaceA
+  |   Methods: 
+  |     |   Method: run
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toString
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: func1
+  |     |     |   Exceptions: java.lang.Exception 
+  |     |     |   Parameters: int double boolean java.lang.String 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: func3
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public abstract 
+  |     |   Method: func0
+  |     |     |   Exceptions: java.lang.Exception 
+  |     |     |   Parameters: int boolean 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: func2
+  |     |     |   Exceptions: java.lang.Exception java.lang.ArithmeticException java.lang.IllegalMonitorStateException 
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |   Constructor: ClassC
+  |     |   Parameters: None
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: ClassC
+  |     |   Parameters: int int 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Field: val2
+  |     |   Type: ClassA
+  |     |   Modifiers: private 
+  |     |   Current value: null
+  |   Field: val3
+  |     |   Type: ClassA
+  |     |   Modifiers: private 
+  |     |   Current value: null
+  |   Field: val4
+  |     |   Type: ClassA
+  |     |   Modifiers: private 
+  |     |   Current value: null
+========================================
+
+Declared Class: ClassD
+  |   Superclass: java.lang.Object
+  |   Methods: 
+  |     |   Method: toString
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: getVal3
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |   Constructor: ClassD
+  |     |   Parameters: None
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: ClassD
+  |     |   Parameters: int 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Field: val
+  |     |   Type: ClassA
+  |     |   Modifiers: private 
+  |     |   Current value: null
+  |   Field: val2
+  |     |   Type: ClassA
+  |     |   Modifiers: private static 
+  |     |   Current value: null
+  |   Field: val3
+  |     |   Type: int
+  |     |   Modifiers: private 
+  |     |   Current value: null
+  |   Field: vallarray
+  |     |   Type: ClassA[]
+  |     |   Modifiers: private 
+  |     |   Current value: null
+========================================
+
+Declared Class: InterfaceA
+  |   Interfaces: 
+  |     |   InterfaceB
+  |   Methods: 
+  |     |   Method: func1
+  |     |     |   Exceptions: java.lang.Exception 
+  |     |     |   Parameters: int double boolean java.lang.String 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public abstract 
+  |     |   Method: func2
+  |     |     |   Exceptions: java.lang.Exception java.lang.ArithmeticException java.lang.IllegalMonitorStateException 
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public abstract 
+========================================
+
+Declared Class: InterfaceB
+  |   Methods: 
+  |     |   Method: func0
+  |     |     |   Exceptions: java.lang.Exception 
+  |     |     |   Parameters: int boolean 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public abstract 
+========================================
+
+======================================================
+======================================================
+Running Test: ClassD
+Declared Class: ClassD
+  |   Superclass: java.lang.Object
+  |   Methods: 
+  |     |   Method: toString
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: getVal3
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |   Constructor: ClassD
+  |     |   Parameters: None
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: ClassD
+  |     |   Parameters: int 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Field: val
+  |     |   Type: ClassA
+  |     |   Modifiers: private 
+  |     |   Current value: ClassA
+  |     |     |   Declared Class: ClassA
+  |     |     |     |   Superclass: java.lang.Object
+  |     |     |     |   Interfaces: 
+  |     |     |     |     |   java.io.Serializable
+  |     |     |     |     |   java.lang.Runnable
+  |     |     |     |   Methods: 
+  |     |     |     |     |   Method: run
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: toString
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.String
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: setVal
+  |     |     |     |     |     |   Exceptions: java.lang.Exception 
+  |     |     |     |     |     |   Parameters: int 
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: printSomething
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private 
+  |     |     |     |     |   Method: getVal
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |   Constructor: ClassA
+  |     |     |     |     |   Parameters: None
+  |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |   public
+  |     |     |     |   Constructor: ClassA
+  |     |     |     |     |   Parameters: int 
+  |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |   public
+  |     |     |     |   Field: val
+  |     |     |     |     |   Type: int
+  |     |     |     |     |   Modifiers: private 
+  |     |     |     |     |   Current value: 17
+  |     |     |     |   Field: val2
+  |     |     |     |     |   Type: double
+  |     |     |     |     |   Modifiers: private 
+  |     |     |     |     |   Current value: 0.2
+  |     |     |     |   Field: val3
+  |     |     |     |     |   Type: boolean
+  |     |     |     |     |   Modifiers: private 
+  |     |     |     |     |   Current value: true
+  |     |     |   ========================================
+
+  |     |     |   Declared Class: java.lang.Object
+  |     |     |     |   Methods: 
+  |     |     |     |     |   Method: finalize
+  |     |     |     |     |     |   Exceptions: java.lang.Throwable 
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   protected 
+  |     |     |     |     |   Method: wait
+  |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final 
+  |     |     |     |     |   Method: wait
+  |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |   Parameters: long int 
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final 
+  |     |     |     |     |   Method: wait
+  |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |   Parameters: long 
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: equals
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.lang.Object 
+  |     |     |     |     |     |   Return Type: boolean
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: toString
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.String
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: hashCode
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public native 
+  |     |     |     |     |   Method: getClass
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.Class
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: clone
+  |     |     |     |     |     |   Exceptions: java.lang.CloneNotSupportedException 
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.Object
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   protected native 
+  |     |     |     |     |   Method: notify
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: notifyAll
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: registerNatives
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private static native 
+  |     |     |     |   Constructor: java.lang.Object
+  |     |     |     |     |   Parameters: None
+  |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |   public
+  |     |     |   ========================================
+
+  |     |     |   Declared Class: java.io.Serializable
+  |     |     |   ========================================
+
+  |     |     |   Declared Class: java.lang.Runnable
+  |     |     |     |   Methods: 
+  |     |     |     |     |   Method: run
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public abstract 
+  |     |     |   ========================================
+  |   Field: val2
+  |     |   Type: ClassA
+  |     |   Modifiers: private static 
+  |     |   Current value: null
+  |   Field: val3
+  |     |   Type: int
+  |     |   Modifiers: private 
+  |     |   Current value: 32
+  |   Field: vallarray
+  |     |   Type: ClassA[]
+  |     |   Modifiers: private 
+  |     |   Array dimensions: 1
+  |     |   Array length (1st dimension): 10
+  |     |   Current values: 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+========================================
+
+======================================================
+======================================================
+Running Test: ClassD
+Declared Class: ClassD
+  |   Superclass: java.lang.Object
+  |   Methods: 
+  |     |   Method: toString
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: getVal3
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |   Constructor: ClassD
+  |     |   Parameters: None
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: ClassD
+  |     |   Parameters: int 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Field: val
+  |     |   Type: ClassA
+  |     |   Modifiers: private 
+  |     |   Current value: ClassA
+  |     |     |   Declared Class: ClassA
+  |     |     |     |   Superclass: java.lang.Object
+  |     |     |     |   Interfaces: 
+  |     |     |     |     |   java.io.Serializable
+  |     |     |     |     |   java.lang.Runnable
+  |     |     |     |   Methods: 
+  |     |     |     |     |   Method: run
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: toString
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.String
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: setVal
+  |     |     |     |     |     |   Exceptions: java.lang.Exception 
+  |     |     |     |     |     |   Parameters: int 
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: printSomething
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private 
+  |     |     |     |     |   Method: getVal
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |   Constructor: ClassA
+  |     |     |     |     |   Parameters: None
+  |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |   public
+  |     |     |     |   Constructor: ClassA
+  |     |     |     |     |   Parameters: int 
+  |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |   public
+  |     |     |     |   Field: val
+  |     |     |     |     |   Type: int
+  |     |     |     |     |   Modifiers: private 
+  |     |     |     |     |   Current value: 17
+  |     |     |     |   Field: val2
+  |     |     |     |     |   Type: double
+  |     |     |     |     |   Modifiers: private 
+  |     |     |     |     |   Current value: 0.2
+  |     |     |     |   Field: val3
+  |     |     |     |     |   Type: boolean
+  |     |     |     |     |   Modifiers: private 
+  |     |     |     |     |   Current value: true
+  |     |     |   ========================================
+
+  |     |     |   Declared Class: java.lang.Object
+  |     |     |     |   Methods: 
+  |     |     |     |     |   Method: finalize
+  |     |     |     |     |     |   Exceptions: java.lang.Throwable 
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   protected 
+  |     |     |     |     |   Method: wait
+  |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final 
+  |     |     |     |     |   Method: wait
+  |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |   Parameters: long int 
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final 
+  |     |     |     |     |   Method: wait
+  |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |   Parameters: long 
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: equals
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.lang.Object 
+  |     |     |     |     |     |   Return Type: boolean
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: toString
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.String
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: hashCode
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public native 
+  |     |     |     |     |   Method: getClass
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.Class
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: clone
+  |     |     |     |     |     |   Exceptions: java.lang.CloneNotSupportedException 
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.Object
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   protected native 
+  |     |     |     |     |   Method: notify
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: notifyAll
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: registerNatives
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private static native 
+  |     |     |     |   Constructor: java.lang.Object
+  |     |     |     |     |   Parameters: None
+  |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |   public
+  |     |     |   ========================================
+
+  |     |     |   Declared Class: java.io.Serializable
+  |     |     |   ========================================
+
+  |     |     |   Declared Class: java.lang.Runnable
+  |     |     |     |   Methods: 
+  |     |     |     |     |   Method: run
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public abstract 
+  |     |     |   ========================================
+  |   Field: val2
+  |     |   Type: ClassA
+  |     |   Modifiers: private static 
+  |     |   Current value: null
+  |   Field: val3
+  |     |   Type: int
+  |     |   Modifiers: private 
+  |     |   Current value: 34
+  |   Field: vallarray
+  |     |   Type: ClassA[]
+  |     |   Modifiers: private 
+  |     |   Array dimensions: 1
+  |     |   Array length (1st dimension): 10
+  |     |   Current values: 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+========================================
+
+======================================================
+======================================================
+Running Test: [LClassB;@6d06d69c
+Declared Class: [LClassB;
+  |   Superclass: java.lang.Object
+  |   Interfaces: 
+  |     |   java.lang.Cloneable
+  |     |   java.io.Serializable
+  |     |   Array dimensions: 1
+  |     |   Array length (1st dimension): 12
+  |     |   Current values: 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+  |     |     |   null 
+========================================
+
+Declared Class: java.lang.Object
+  |   Methods: 
+  |     |   Method: finalize
+  |     |     |   Exceptions: java.lang.Throwable 
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   protected 
+  |     |   Method: wait
+  |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final 
+  |     |   Method: wait
+  |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |   Parameters: long int 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final 
+  |     |   Method: wait
+  |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |   Parameters: long 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final native 
+  |     |   Method: equals
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.Object 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toString
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: hashCode
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public native 
+  |     |   Method: getClass
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.Class
+  |     |     |   Modifiers:
+  |     |     |     |   public final native 
+  |     |   Method: clone
+  |     |     |   Exceptions: java.lang.CloneNotSupportedException 
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.Object
+  |     |     |   Modifiers:
+  |     |     |     |   protected native 
+  |     |   Method: notify
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final native 
+  |     |   Method: notifyAll
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public final native 
+  |     |   Method: registerNatives
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   private static native 
+  |   Constructor: java.lang.Object
+  |     |   Parameters: None
+  |     |   Modifiers:
+  |     |     |   public
+========================================
+
+Declared Class: java.lang.Cloneable
+========================================
+
+Declared Class: java.io.Serializable
+========================================
+
+======================================================
+======================================================
+Running Test: [[LClassB;@6d06d69c
+Declared Class: [[LClassB;
+  |   Superclass: java.lang.Object
+  |   Interfaces: 
+  |     |   java.lang.Cloneable
+  |     |   java.io.Serializable
+  |     |   Array dimensions: 2
+  |     |   Array length (1st dimension): 12
+  |     |   Current values: 
+  |     |     |   [LClassB;@7852e922
+  |     |     |     |   Declared Class: [LClassB;
+  |     |     |     |     |   Superclass: java.lang.Object
+  |     |     |     |     |   Interfaces: 
+  |     |     |     |     |     |   java.lang.Cloneable
+  |     |     |     |     |     |   java.io.Serializable
+  |     |     |     |     |     |   Array dimensions: 1
+  |     |     |     |     |     |   Array length (1st dimension): 12
+  |     |     |     |     |     |   Current values: 
+  |     |     |     |     |     |     |   null 
+  |     |     |     |     |     |     |   null 
+  |     |     |     |     |     |     |   null 
+  |     |     |     |     |     |     |   null 
+  |     |     |     |     |     |     |   null 
+  |     |     |     |     |     |     |   null 
+  |     |     |     |     |     |     |   null 
+  |     |     |     |     |     |     |   null 
+  |     |     |     |     |     |     |   null 
+  |     |     |     |     |     |     |   null 
+  |     |     |     |     |     |     |   null 
+  |     |     |     |     |     |     |   null 
+  |     |     |     |   ========================================
+
+  |     |     |     |   Declared Class: java.lang.Object
+  |     |     |     |     |   Methods: 
+  |     |     |     |     |     |   Method: finalize
+  |     |     |     |     |     |     |   Exceptions: java.lang.Throwable 
+  |     |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |     |   protected 
+  |     |     |     |     |     |   Method: wait
+  |     |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |     |   public final 
+  |     |     |     |     |     |   Method: wait
+  |     |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |     |   Parameters: long int 
+  |     |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |     |   public final 
+  |     |     |     |     |     |   Method: wait
+  |     |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |     |   Parameters: long 
+  |     |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |     |   Method: equals
+  |     |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |     |   Parameters: java.lang.Object 
+  |     |     |     |     |     |     |   Return Type: boolean
+  |     |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |     |   public 
+  |     |     |     |     |     |   Method: toString
+  |     |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |     |   Return Type: java.lang.String
+  |     |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |     |   public 
+  |     |     |     |     |     |   Method: hashCode
+  |     |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |     |   public native 
+  |     |     |     |     |     |   Method: getClass
+  |     |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |     |   Return Type: java.lang.Class
+  |     |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |     |   Method: clone
+  |     |     |     |     |     |     |   Exceptions: java.lang.CloneNotSupportedException 
+  |     |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |     |   Return Type: java.lang.Object
+  |     |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |     |   protected native 
+  |     |     |     |     |     |   Method: notify
+  |     |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |     |   Method: notifyAll
+  |     |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |     |   Method: registerNatives
+  |     |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |     |   private static native 
+  |     |     |     |     |   Constructor: java.lang.Object
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public
+  |     |     |     |   ========================================
+
+  |     |     |     |   Declared Class: java.lang.Cloneable
+  |     |     |     |   ========================================
+
+  |     |     |     |   Declared Class: java.io.Serializable
+  |     |     |     |   ========================================
+  |     |     |   [LClassB;@55f96302
+  |     |     |   [LClassB;@3d4eac69
+  |     |     |   [LClassB;@42a57993
+  |     |     |   [LClassB;@75b84c92
+  |     |     |   [LClassB;@6bc7c054
+  |     |     |   [LClassB;@232204a1
+  |     |     |   [LClassB;@4aa298b7
+  |     |     |   [LClassB;@7d4991ad
+  |     |     |   [LClassB;@28d93b30
+  |     |     |   [LClassB;@1b6d3586
+  |     |     |   [LClassB;@4554617c
+========================================
+
+======================================================
+======================================================
+Running Test: Test String
+Declared Class: java.lang.String
+  |   Superclass: java.lang.Object
+  |   Interfaces: 
+  |     |   java.io.Serializable
+  |     |   java.lang.Comparable
+  |     |   java.lang.CharSequence
+  |   Methods: 
+  |     |   Method: equals
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.Object 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toString
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: hashCode
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: compareTo
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: compareTo
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.Object 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public volatile 
+  |     |   Method: indexOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: indexOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: indexOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: indexOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: indexOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: char[] int int char[] int int int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   static 
+  |     |   Method: indexOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: char[] int int java.lang.String int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   static 
+  |     |   Method: valueOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static 
+  |     |   Method: valueOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: long 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static 
+  |     |   Method: valueOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: float 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static 
+  |     |   Method: valueOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: boolean 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static 
+  |     |   Method: valueOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: char[] 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static 
+  |     |   Method: valueOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: char[] int int 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static 
+  |     |   Method: valueOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.Object 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static 
+  |     |   Method: valueOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: char 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static 
+  |     |   Method: valueOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: double 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static 
+  |     |   Method: charAt
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int 
+  |     |     |   Return Type: char
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: checkBounds
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: byte[] int int 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   private static 
+  |     |   Method: codePointAt
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: codePointBefore
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: codePointCount
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: compareToIgnoreCase
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: concat
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: contains
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.CharSequence 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: contentEquals
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.CharSequence 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: contentEquals
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.StringBuffer 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: copyValueOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: char[] 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static 
+  |     |   Method: copyValueOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: char[] int int 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static 
+  |     |   Method: endsWith
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: equalsIgnoreCase
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: format
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.util.Locale java.lang.String java.lang.Object[] 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static transient 
+  |     |   Method: format
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String java.lang.Object[] 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static transient 
+  |     |   Method: getBytes
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int int byte[] int 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: getBytes
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.nio.charset.Charset 
+  |     |     |   Return Type: byte[]
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: getBytes
+  |     |     |   Exceptions: java.io.UnsupportedEncodingException 
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: byte[]
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: getBytes
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: byte[]
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: getChars
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int int char[] int 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: getChars
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: char[] int 
+  |     |     |   Return Type: void
+  |     |     |   Modifiers:
+  |     |     |     |    
+  |     |   Method: indexOfSupplementary
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   private 
+  |     |   Method: intern
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public native 
+  |     |   Method: isEmpty
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: join
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.CharSequence java.lang.CharSequence[] 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static transient 
+  |     |   Method: join
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.CharSequence java.lang.Iterable 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public static 
+  |     |   Method: lastIndexOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: lastIndexOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: lastIndexOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: char[] int int java.lang.String int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   static 
+  |     |   Method: lastIndexOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: lastIndexOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: lastIndexOf
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: char[] int int char[] int int int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   static 
+  |     |   Method: lastIndexOfSupplementary
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   private 
+  |     |   Method: length
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: matches
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: nonSyncContentEquals
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.AbstractStringBuilder 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   private 
+  |     |   Method: offsetByCodePoints
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int int 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: regionMatches
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int java.lang.String int int 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: regionMatches
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: boolean int java.lang.String int int 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: replace
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: char char 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: replace
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.CharSequence java.lang.CharSequence 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: replaceAll
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String java.lang.String 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: replaceFirst
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String java.lang.String 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: split
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: java.lang.String[]
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: split
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String int 
+  |     |     |   Return Type: java.lang.String[]
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: startsWith
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String int 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: startsWith
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.String 
+  |     |     |   Return Type: boolean
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: subSequence
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int int 
+  |     |     |   Return Type: java.lang.CharSequence
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: substring
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: substring
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int int 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toCharArray
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: char[]
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toLowerCase
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.util.Locale 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toLowerCase
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toUpperCase
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: toUpperCase
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.util.Locale 
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: trim
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |   Constructor: java.lang.String
+  |     |   Parameters: byte[] int int 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: byte[] java.nio.charset.Charset 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: byte[] java.lang.String 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: byte[] int int java.nio.charset.Charset 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: byte[] int int java.lang.String 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: char[] boolean 
+  |     |   Modifiers:
+  |     |     |   
+  |   Constructor: java.lang.String
+  |     |   Parameters: java.lang.StringBuilder 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: java.lang.StringBuffer 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: byte[] 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: int[] int int 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: None
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: char[] 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: java.lang.String 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: char[] int int 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: byte[] int 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Constructor: java.lang.String
+  |     |   Parameters: byte[] int int int 
+  |     |   Modifiers:
+  |     |     |   public
+  |   Field: value
+  |     |   Type: char[]
+  |     |   Modifiers: private final 
+  |     |   Array dimensions: 1
+  |     |   Array length (1st dimension): 11
+  |     |   Current values: 
+  |     |     |   T
+  |     |     |     |   Declared Class: char
+  |     |     |     |   ========================================
+  |     |     |   e
+  |     |     |   s
+  |     |     |   t
+  |     |     |    
+  |     |     |   S
+  |     |     |   t
+  |     |     |   r
+  |     |     |   i
+  |     |     |   n
+  |     |     |   g
+  |   Field: hash
+  |     |   Type: int
+  |     |   Modifiers: private 
+  |     |   Current value: 0
+  |   Field: serialVersionUID
+  |     |   Type: long
+  |     |   Modifiers: private static final 
+  |     |   Current value: -6849794470754667710
+  |   Field: serialPersistentFields
+  |     |   Type: java.io.ObjectStreamField[]
+  |     |   Modifiers: private static final 
+  |     |   Array dimensions: 1
+  |     |   Array length (1st dimension): 0
+  |     |   Current values: 
+  |   Field: CASE_INSENSITIVE_ORDER
+  |     |   Type: java.util.Comparator
+  |     |   Modifiers: public static final 
+  |     |   Current value: java.lang.String$CaseInsensitiveComparator@70dea4e
+  |     |     |   Declared Class: java.lang.String$CaseInsensitiveComparator
+  |     |     |     |   Superclass: java.lang.Object
+  |     |     |     |   Interfaces: 
+  |     |     |     |     |   java.util.Comparator
+  |     |     |     |     |   java.io.Serializable
+  |     |     |     |   Methods: 
+  |     |     |     |     |   Method: compare
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.lang.Object java.lang.Object 
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public volatile 
+  |     |     |     |     |   Method: compare
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.lang.String java.lang.String 
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: readResolve
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.Object
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private 
+  |     |     |     |   Constructor: java.lang.String$CaseInsensitiveComparator
+  |     |     |     |     |   Parameters: java.lang.String$1 
+  |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |   
+  |     |     |     |   Constructor: java.lang.String$CaseInsensitiveComparator
+  |     |     |     |     |   Parameters: None
+  |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |   private
+  |     |     |     |   Field: serialVersionUID
+  |     |     |     |     |   Type: long
+  |     |     |     |     |   Modifiers: private static final 
+  |     |     |     |     |   Current value: 8575799808933029326
+  |     |     |   ========================================
+
+  |     |     |   Declared Class: java.lang.Object
+  |     |     |     |   Methods: 
+  |     |     |     |     |   Method: finalize
+  |     |     |     |     |     |   Exceptions: java.lang.Throwable 
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   protected 
+  |     |     |     |     |   Method: wait
+  |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final 
+  |     |     |     |     |   Method: wait
+  |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |   Parameters: long int 
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final 
+  |     |     |     |     |   Method: wait
+  |     |     |     |     |     |   Exceptions: java.lang.InterruptedException 
+  |     |     |     |     |     |   Parameters: long 
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: equals
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.lang.Object 
+  |     |     |     |     |     |   Return Type: boolean
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: toString
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.String
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: hashCode
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public native 
+  |     |     |     |     |   Method: getClass
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.Class
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: clone
+  |     |     |     |     |     |   Exceptions: java.lang.CloneNotSupportedException 
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.lang.Object
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   protected native 
+  |     |     |     |     |   Method: notify
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: notifyAll
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public final native 
+  |     |     |     |     |   Method: registerNatives
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: void
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private static native 
+  |     |     |     |   Constructor: java.lang.Object
+  |     |     |     |     |   Parameters: None
+  |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |   public
+  |     |     |   ========================================
+
+  |     |     |   Declared Class: java.util.Comparator
+  |     |     |     |   Methods: 
+  |     |     |     |     |   Method: equals
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.lang.Object 
+  |     |     |     |     |     |   Return Type: boolean
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public abstract 
+  |     |     |     |     |   Method: compare
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.lang.Object java.lang.Object 
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public abstract 
+  |     |     |     |     |   Method: $deserializeLambda$
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.lang.invoke.SerializedLambda 
+  |     |     |     |     |     |   Return Type: java.lang.Object
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private static 
+  |     |     |     |     |   Method: comparing
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.Function java.util.Comparator 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public static 
+  |     |     |     |     |   Method: comparing
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.Function 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public static 
+  |     |     |     |     |   Method: comparingDouble
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.ToDoubleFunction 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public static 
+  |     |     |     |     |   Method: comparingInt
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.ToIntFunction 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public static 
+  |     |     |     |     |   Method: comparingLong
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.ToLongFunction 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public static 
+  |     |     |     |     |   Method: lambda$comparing$77a9974f$1
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.Function java.lang.Object java.lang.Object 
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private static 
+  |     |     |     |     |   Method: lambda$comparing$ea9a8b3a$1
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.Comparator java.util.function.Function java.lang.Object java.lang.Object 
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private static 
+  |     |     |     |     |   Method: lambda$comparingDouble$8dcf42ea$1
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.ToDoubleFunction java.lang.Object java.lang.Object 
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private static 
+  |     |     |     |     |   Method: lambda$comparingInt$7b0bb60$1
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.ToIntFunction java.lang.Object java.lang.Object 
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private static 
+  |     |     |     |     |   Method: lambda$comparingLong$6043328a$1
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.ToLongFunction java.lang.Object java.lang.Object 
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private static 
+  |     |     |     |     |   Method: lambda$thenComparing$36697e65$1
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.Comparator java.lang.Object java.lang.Object 
+  |     |     |     |     |     |   Return Type: int
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   private 
+  |     |     |     |     |   Method: naturalOrder
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public static 
+  |     |     |     |     |   Method: nullsFirst
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.Comparator 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public static 
+  |     |     |     |     |   Method: nullsLast
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.Comparator 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public static 
+  |     |     |     |     |   Method: reverseOrder
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public static 
+  |     |     |     |     |   Method: reversed
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: None
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: thenComparing
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.Function 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: thenComparing
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.Comparator 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: thenComparing
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.Function java.util.Comparator 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: thenComparingDouble
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.ToDoubleFunction 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: thenComparingInt
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.ToIntFunction 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |     |     |   Method: thenComparingLong
+  |     |     |     |     |     |   Exceptions: None
+  |     |     |     |     |     |   Parameters: java.util.function.ToLongFunction 
+  |     |     |     |     |     |   Return Type: java.util.Comparator
+  |     |     |     |     |     |   Modifiers:
+  |     |     |     |     |     |     |   public 
+  |     |     |   ========================================
+
+  |     |     |   Declared Class: java.io.Serializable
+  |     |     |   ========================================
+========================================
+
+Declared Class: java.lang.Comparable
+  |   Methods: 
+  |     |   Method: compareTo
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: java.lang.Object 
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public abstract 
+========================================
+
+Declared Class: java.lang.CharSequence
+  |   Methods: 
+  |     |   Method: toString
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.lang.String
+  |     |     |   Modifiers:
+  |     |     |     |   public abstract 
+  |     |   Method: charAt
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int 
+  |     |     |   Return Type: char
+  |     |     |   Modifiers:
+  |     |     |     |   public abstract 
+  |     |   Method: length
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: int
+  |     |     |   Modifiers:
+  |     |     |     |   public abstract 
+  |     |   Method: subSequence
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: int int 
+  |     |     |   Return Type: java.lang.CharSequence
+  |     |     |   Modifiers:
+  |     |     |     |   public abstract 
+  |     |   Method: chars
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.util.stream.IntStream
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: codePoints
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.util.stream.IntStream
+  |     |     |   Modifiers:
+  |     |     |     |   public 
+  |     |   Method: lambda$chars$0
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.util.Spliterator$OfInt
+  |     |     |   Modifiers:
+  |     |     |     |   private 
+  |     |   Method: lambda$codePoints$1
+  |     |     |   Exceptions: None
+  |     |     |   Parameters: None
+  |     |     |   Return Type: java.util.Spliterator$OfInt
+  |     |     |   Modifiers:
+  |     |     |     |   private 
+========================================
+
+======================================================
+
