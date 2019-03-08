@@ -63,10 +63,7 @@ public class Inspector {
 		///*
 		for (int i = 0; i < toInspect.size(); i++) {
 			Object supObj = createSuperObjFromClass(toInspect.get(i), obj);
-			if (supObj == null) {
-				supObj = obj;
-			}
-			else if (hasNotInspected(toInspect.get(i))) {
+			if (hasNotInspected(toInspect.get(i))) {
 				str += "\n" + inspectWorker(toInspect.get(i), 
 											supObj, 
 											recursive, 
@@ -194,7 +191,7 @@ public class Inspector {
 				}//*/
 				else if (fields[i].getType().isArray()) {
 					Object arr = fields[i].get(obj);
-					str += inspectArray(recursive, ind, fields[i].getType().getComponentType(), arr);
+					str += inspectArray(recursive, ind, fields[i].getType(), arr);
 				} 
 				else {
 					if (fields[i].get(obj) == null) {
@@ -243,7 +240,7 @@ public class Inspector {
 				str += indent(ind + 3) + Array.get(arr, k).toString() + "\n";
 			}
 			if (Array.get(arr, k) != null && hasNotInspected(arrayType)) {
-				str += inspectWorker(arrayType, null, recursive, ind + 4);
+				str += inspectWorker(arrayType, Array.get(arr, k), recursive, ind + 4);
 			}
 			else if (recursive && (Array.get(arr, k) != null) 
 					&& !(isPrimOrWrapper(Array.get(arr, k).getClass())) 
@@ -281,7 +278,7 @@ public class Inspector {
 	public Object createSuperObjFromClass(Class<?> cl, Object obj) {
 		Object supObj = null;
 		if (cl.isInterface() || obj == null) {
-			return supObj;
+			return obj;
 		}
 		try {
 			Constructor<?> c = cl.getDeclaredConstructor(new Class<?>[] {});
