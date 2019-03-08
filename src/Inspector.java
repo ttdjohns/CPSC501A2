@@ -100,6 +100,31 @@ public class Inspector {
 		}
 		
 		
+		str = inspectConstructors(classObj, ind, str);
+		
+		
+		str = inspectFields(classObj, obj, recursive, ind, str);
+		
+		str += indent(ind) + "========================================\n";
+		
+		///*
+		for (int i = 0; i < toInspect.size(); i++) {
+			Object supObj = createSuperObjFromClass(toInspect.get(i), obj);
+			if (supObj == null) {
+				supObj = obj;
+			}
+			else if (hasNotInspected(toInspect.get(i))) {
+				str += "\n" + inspectWorker(toInspect.get(i), 
+											supObj, 
+											recursive, 
+											ind);
+			}
+		}
+		//*/
+		return str;
+	}
+
+	public String inspectConstructors(Class<?> classObj, int ind, String str) {
 		Constructor<?>[] constr = classObj.getDeclaredConstructors();
 		for (int i = 0; i < constr.length; i++) {
 			if (Modifier.isPrivate(constr[i].getModifiers())) {
@@ -134,26 +159,6 @@ public class Inspector {
 				str += "\n";
 			}
 		}
-		
-		
-		str = inspectFields(classObj, obj, recursive, ind, str);
-		
-		str += indent(ind) + "========================================\n";
-		
-		///*
-		for (int i = 0; i < toInspect.size(); i++) {
-			Object supObj = createSuperObjFromClass(toInspect.get(i), obj);
-			if (supObj == null) {
-				supObj = obj;
-			}
-			else if (hasNotInspected(toInspect.get(i))) {
-				str += "\n" + inspectWorker(toInspect.get(i), 
-											supObj, 
-											recursive, 
-											ind);
-			}
-		}
-		//*/
 		return str;
 	}
 
