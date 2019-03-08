@@ -136,6 +136,28 @@ public class Inspector {
 		}
 		
 		
+		str = inspectFields(classObj, obj, recursive, ind, str);
+		
+		str += indent(ind) + "========================================\n";
+		
+		///*
+		for (int i = 0; i < toInspect.size(); i++) {
+			Object supObj = createSuperObjFromClass(toInspect.get(i), obj);
+			if (supObj == null) {
+				supObj = obj;
+			}
+			else if (hasNotInspected(toInspect.get(i))) {
+				str += "\n" + inspectWorker(toInspect.get(i), 
+											supObj, 
+											recursive, 
+											ind);
+			}
+		}
+		//*/
+		return str;
+	}
+
+	public String inspectFields(Class<?> classObj, Object obj, boolean recursive, int ind, String str) {
 		Field[] fields = classObj.getDeclaredFields();
 		for (int i = 0; i < fields.length; i++) {
 			fields[i].setAccessible(true);
@@ -186,23 +208,6 @@ public class Inspector {
 				//System.exit(-1);
 			}
 		}
-		
-		str += indent(ind) + "========================================\n";
-		
-		///*
-		for (int i = 0; i < toInspect.size(); i++) {
-			Object supObj = createSuperObjFromClass(toInspect.get(i), obj);
-			if (supObj == null) {
-				supObj = obj;
-			}
-			else if (hasNotInspected(toInspect.get(i))) {
-				str += "\n" + inspectWorker(toInspect.get(i), 
-											supObj, 
-											recursive, 
-											ind);
-			}
-		}
-		//*/
 		return str;
 	}
 
